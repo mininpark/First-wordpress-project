@@ -45,7 +45,8 @@
             }
             wp_list_pages(array(
               'title_li' => NULL, //to get rid of occur title of lists
-              'child_of' => get_the_ID($findChildrenOf)
+              'child_of' => get_the_ID($findChildrenOf),
+              'sort_column' => 'menu_order'
             ));
           ?>
         </ul>
